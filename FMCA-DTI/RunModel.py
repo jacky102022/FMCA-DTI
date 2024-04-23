@@ -29,9 +29,6 @@ from torch.autograd import Variable
 import pandas as pd
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-np.set_printoptions(threshold=np.inf)
-pd.set_option('display.max_columns',None)
-pd.set_option('display.max_rows', None)
 
 def run_model(SEED, DATASET, MODEL, K_Fold, LOSS):
     '''set random seed'''
